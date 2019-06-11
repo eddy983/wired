@@ -1,0 +1,66 @@
+// TABLE SCSS FILE
+
+// Author:	        SmartTemplates
+// Version:	        1.0
+// Created:	        February 2019
+// Last updated:	February 2019
+
+/*===============================================*/
+/* TABLE	    	 						 */
+/*===============================================*/
+
+.table, .table__cell, .table__header, .table__body{
+	width:100%;
+}
+.table__header{
+	& .table__row{
+		display:flex;
+	}
+}
+.table__body{
+	& .table__row{
+		display:flex;
+		position:relative;
+	}
+}
+
+/*===============================================*/
+/* MEDIA QUERIES	 	     					 */
+/*===============================================*/
+
+@include breakpoint(tablet) {
+
+.table{
+	display:flex;
+	& .table__header{
+		width:35%;
+		& .table__row{
+			height:auto;
+			display:block;
+				& .table__cell{
+					min-height:50px;
+				}
+		}
+	}
+	& .table__body{
+		width:65%;
+		overflow-x: scroll;
+		display:flex;
+		& .table__row{
+			height:auto;
+			display:block;
+			min-width: 100px;
+				& .table__cell{
+					min-height:50px;
+				}
+		}
+	}
+	&--no-header{
+		& .table__body{
+		width:100%;
+		}
+	}
+}
+
+
+}

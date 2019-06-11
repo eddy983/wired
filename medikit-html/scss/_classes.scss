@@ -1,0 +1,368 @@
+// CLASSES SCSS FILE
+
+// Author:	        SmartTemplates
+// Version:	        1.0
+// Created:	        February 2019
+// Last updated:	February 2019
+
+// Alignment
+
+// Margins and padding
+.p10 {
+  padding: 10px;
+}
+.p20 {
+  padding: 20px;
+}
+.p40 {
+  padding: 40px;
+}
+.pb0 {
+  padding-bottom: 0px !important;
+}
+.pb10 {
+  padding-bottom: 10px;
+}
+.pb20 {
+  padding-bottom: 20px;
+}
+.pb40 {
+  padding-bottom: 40px;
+}
+.pt10 {
+  padding-top: 10px;
+}
+.pt20 {
+  padding-top: 20px;
+}
+.pt40 {
+  padding-top: 40px;
+}
+
+.m10 {
+  margin: 10px;
+}
+.m20 {
+  margin: 20px;
+}
+.m40 {
+  margin: 40px;
+}
+.mb0 {
+  margin-bottom: 0px !important;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mb40 {
+  margin-bottom: 40px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt40 {
+  margin-top: 40px;
+}
+.mr5 {
+  margin-right: 5%;
+}
+
+.ti5 {
+  text-indent: 5%;
+}
+
+@include breakpoint(tablet) {
+  .pb0 {
+    padding-bottom: 20px !important;
+  }
+  .mb0 {
+    margin-bottom: 20px !important;
+  }
+}
+
+// Flex display
+.d-flex {
+  display: flex;
+}
+.justify-fs {
+  justify-content: flex-start;
+}
+.justify-fe {
+  justify-content: flex-end;
+}
+.justify-c {
+  justify-content: center;
+}
+.justify-sb {
+  justify-content: space-between;
+}
+.grow-1 {
+  flex-grow: 1;
+}
+.grow-0 {
+  flex-grow: 0;
+}
+.align-c {
+  align-items: center;
+}
+.aligns-fs {
+  align-self: flex-start;
+}
+.aligns-fe {
+  align-self: flex-end;
+}
+.aligns-c {
+  align-self: center;
+}
+
+// Text align
+.talign-r {
+  text-align: right;
+}
+.talign-l {
+  text-align: left;
+}
+.talign-c {
+  text-align: center;
+}
+
+.position-a {
+  position: absolute;
+}
+.position-r {
+  position: relative;
+}
+
+// Text Colors
+
+// Gray
+.color-gray5 {
+  @extend %color-gray5;
+}
+.color-gray10 {
+  @extend %color-gray10;
+}
+.color-gray50 {
+  @extend %color-gray50;
+}
+.color-gray100 {
+  @extend %color-gray100;
+}
+.color-gray200 {
+  @extend %color-gray200;
+}
+.color-gray300 {
+  @extend %color-gray300;
+}
+.color-gray400 {
+  @extend %color-gray400;
+}
+.color-gray500 {
+  @extend %color-gray500;
+}
+.color-gray600 {
+  @extend %color-gray600;
+}
+.color-gray700 {
+  @extend %color-gray700;
+}
+.color-gray800 {
+  @extend %color-gray800;
+}
+.color-gray900 {
+  @extend %color-gray900;
+}
+// Color
+.color-white {
+  @extend %color-white;
+}
+.color-blue {
+  @extend %color-blue;
+}
+.color-lightblue {
+  @extend %color-lightblue;
+}
+.color-red {
+  @extend %color-red;
+}
+
+// Width
+.w100 {
+  width: 100%;
+}
+
+// Background Colors
+
+.bg-gray5 {
+  @extend %background-gray5;
+}
+.bg-gray10 {
+  @extend %background-gray10;
+}
+.bg-gray50 {
+  @extend %background-gray50;
+}
+.bg-gray100 {
+  @extend %background-gray100;
+}
+.bg-gray200 {
+  @extend %background-gray200;
+}
+.bg-gray300 {
+  @extend %background-gray300;
+}
+.bg-gray400 {
+  @extend %background-gray400;
+}
+.bg-gray500 {
+  @extend %background-gray500;
+}
+.bg-gray600 {
+  @extend %background-gray600;
+}
+.bg-gray700 {
+  @extend %background-gray700;
+}
+.bg-gray800 {
+  @extend %background-gray800;
+}
+.bg-gray900 {
+  @extend %background-gray900;
+}
+
+.bg-white {
+  @extend %background-white;
+}
+.bg-blue {
+  @extend %background-blue;
+}
+.bg-lightblue {
+  @extend %background-lightblue;
+}
+.bg-red {
+  @extend %background-red;
+}
+
+// CSS GRADIENT BG
+
+.gradient-lightblue {
+  @extend %gradient-lightblue;
+}
+.gradient-blue {
+  @extend %gradient-blue;
+}
+.gradient-pink {
+  @extend %gradient-pink;
+}
+.gradient-text {
+  @extend %gradient-text;
+}
+
+// CSS BUTTONS
+
+// SIZES
+.button {
+  @extend %button;
+}
+.button--inline {
+  display: inline-block !important;
+  margin-right: $grid__col--margin;
+}
+@include breakpoint(tablet) {
+  .button--inline {
+    display: block !important;
+    margin-right: 0;
+    margin-bottom: $grid__col--margin;
+  }
+}
+.button--small-table {
+  @extend %button--small-table;
+}
+.button--general {
+  @extend %button--general;
+}
+.button--submit {
+  @extend %button--submit;
+}
+.button--round {
+  @extend %button--round;
+}
+//  STYLES
+.button--blue-border {
+  @extend %button--blue-border;
+}
+.button--blue-border:hover,
+.button--blue-border.selected {
+  @extend %button--blue-border--hover;
+}
+.button--blue-bg {
+  @extend %button--blue-bg;
+}
+.button--blue-bg:hover {
+  @extend %button--blue-bg--hover;
+}
+.button--lightblue-bg {
+  @extend %button--lightblue-bg;
+}
+.button--lightblue-bg:hover {
+  @extend %button--lightblue-bg--hover;
+}
+.button--lightblue-border {
+  @extend %button--lightblue-border;
+}
+.button--lightblue-border:hover {
+  @extend %button--lightblue-border--hover;
+}
+.button--red-border {
+  @extend %button--red-border;
+}
+.button--red-border:hover {
+  @extend %button--red-border--hover;
+}
+.button--red-bg {
+  @extend %button--red-bg;
+}
+.button--red-bg:hover {
+  @extend %button--red-bg--hover;
+}
+.button--green-border {
+  @extend %button--green-border;
+}
+.button--green-border:hover {
+  @extend %button--green-border--hover;
+}
+.button--green-bg {
+  @extend %button--green-bg;
+}
+.button--green-bg:hover {
+  @extend %button--green-bg--hover;
+}
+
+.btn {
+  background: burlywood;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 500px; 
+  height: 50%;
+  margin-top: 2%;
+}
+
+// BORDER RADIUS
+
+.border-radius5 {
+  @extend %border-radius5;
+}
+.border-radius50 {
+  @extend %border-radius50;
+}
+
+/// DISPLAY
+.display-none {
+  display: none;
+}

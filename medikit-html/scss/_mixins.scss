@@ -1,0 +1,353 @@
+// MIXINS SCSS FILE
+
+// Author:	        SmartTemplates
+// Version:	        1.0
+// Created:	        February 2019
+// Last updated:	February 2019
+
+// Table of Contents
+
+// 1. Text Colors 
+// 2. Background Colors
+// 3. Borders
+// 4. Border Radius
+// 5. Custom Gradients
+// 6. Drop Shadows
+// 7. Custom Buttons
+// 8. Transitions
+// 9. Font size and line height 
+// 10. Layout Breakpoints
+
+
+
+// Text Colors 
+
+// Gray 
+%color-gray5{ color: $color-gray5;}
+%color-gray10{ color: $color-gray10;}
+%color-gray50{ color: $color-gray50;}
+%color-gray100{ color: $color-gray100;}
+%color-gray200{ color: $color-gray200;}
+%color-gray300{ color: $color-gray300;}
+%color-gray400{ color: $color-gray400;}
+%color-gray500{ color: $color-gray500;}
+%color-gray600{ color: $color-gray600;}
+%color-gray700{ color: $color-gray700;}
+%color-gray800{ color: $color-gray800;}
+%color-gray900{ color: $color-gray900;}
+// Color 
+%color-white{ color: $color-white;}
+%color-blue{ color: $color-blue;}
+%color-lightblue{ color: $color-lightblue;}
+%color-red{ color: $color-red;}
+%color-pink{ color: $color-pink;}
+
+// Background Colors 
+
+// Gray 
+%background-gray5{ background-color: $color-gray5;}
+%background-gray10{ background-color: $color-gray10;}
+%background-gray50{ background-color: $color-gray50;}
+%background-gray100{ background-color: $color-gray100;}
+%background-gray200{ background-color: $color-gray200;}
+%background-gray300{ background-color: $color-gray300;}
+%background-gray400{ background-color: $color-gray400;}
+%background-gray500{ background-color: $color-gray500;}
+%background-gray600{ background-color: $color-gray600;}
+%background-gray700{ background-color: $color-gray700;}
+%background-gray800{ background-color: $color-gray800;}
+%background-gray900{ background-color: $color-gray900;}
+// Color 
+%background-white{ background-color: $color-white;}
+%background-blue{ background-color: $color-blue;}
+%background-lightblue{ background-color: $color-lightblue;}
+%background-red{ background-color: $color-red;}
+
+
+// Borders
+
+//Gray 
+%border-gray5{ border:1px solid $color-gray5;}
+%border-gray10{ border:1px solid $color-gray10;}
+%border-gray50{ border:1px solid $color-gray50;}
+%border-gray100{ border:1px solid $color-gray100;}
+%border-gray200{ border:1px solid $color-gray200;}
+%border-gray300{ border:1px solid $color-gray300;}
+%border-gray400{ border:1px solid $color-gray400;}
+%border-gray500{ border:1px solid $color-gray500;}
+%border-gray600{ border:1px solid $color-gray600;}
+%border-gray700{ border:1px solid $color-gray700;}
+%border-gray800{ border:1px solid $color-gray800;}
+%border-gray900{ border:1px solid $color-gray900;}
+//Color 
+%border-white{ border:1px solid $color-white;}
+%border-blue{ border:1px solid $color-blue;}
+%border-lightblue{ border:1px solid $color-lightblue;}
+%border-red{ border:1px solid $color-red;}
+
+
+// Border Radius 
+
+%border-radius5{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+%border-radius10{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+%border-radius15{
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+%border-radius20{
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+%border-radius25{
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 23px;
+}
+%border-radius50{
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+
+// Custom Gradients 
+
+%gradient-lightblue{
+	background-color:#3beaf5;
+	background: -webkit-linear-gradient(90deg, #11c8e3, #3beaf5); 
+	background: linear-gradient(90deg, #11c8e3, #3beaf5); 
+}
+%gradient-blue{
+	background-color:#5616f5;
+	background: -webkit-linear-gradient(90deg, #5616f5, #b446f4); 
+	background: linear-gradient(90deg, #5616f5, #b446f4); 
+}
+%gradient-pink{
+	background-color:#ff5acd;
+	background: -webkit-linear-gradient(90deg, #ff5acd, #fd86a7); 
+	background: linear-gradient(90deg, #ff5acd, #fd86a7); 
+}
+%gradient-sidebar{
+	background-color:#5616f5;
+	background: -webkit-linear-gradient(#5616f5, #7d28eb); 
+	background: linear-gradient(#5616f5, #7d28eb);
+}
+
+%gradient-text{
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+// Drop Shadows 
+
+%drop-shadow__all-around{
+	-webkit-box-shadow: 0px 1px 20px -5px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px 1px 20px -5px rgba(0,0,0,0.15);
+	box-shadow: 0px 1px 20px -5px rgba(0,0,0,0.15);
+}
+%drop-shadow__all-light-bottom-focused{
+	-webkit-box-shadow: 0px 5px 20px -13px rgba(0,0,0,0.12);
+	-moz-box-shadow: 0px 5px 20px -13px rgba(0,0,0,0.12);
+	box-shadow: 0px 5px 20px -13px rgba(0,0,0,0.12);
+}
+%drop-shadow__all-bottom-focused{
+	-webkit-box-shadow: 0px 12px 22px -13px rgba(0,0,0,0.22);
+	-moz-box-shadow: 0px 12px 22px -13px rgba(0,0,0,0.22);
+	box-shadow: 0px 12px 22px -13px rgba(0,0,0,0.22);
+}
+%drop-shadow__all-strong-bottom-focused{
+	-webkit-box-shadow: 0px 12px 22px -13px rgba(0,0,0,0.32);
+	-moz-box-shadow: 0px 12px 22px -13px rgba(0,0,0,0.32);
+	box-shadow: 0px 12px 22px -13px rgba(0,0,0,0.32);
+}
+
+
+// Custom Buttons 
+
+%button{
+	font-family: 'Roboto', sans-serif;
+	cursor:pointer;
+	display:block;
+	@extend %border-radius20;
+	@extend %transition-all--05;
+}
+%button--small-table{
+	@extend %button;
+	font-size:1.3rem;
+	font-weight:500;
+	padding:4px 20px;
+}
+%button--large-table{
+	@extend %button;
+	font-size:1.3rem;
+	font-weight:500;
+	padding:4px 20px;
+}
+%button--general{
+	@extend %button;
+	font-size:1.3rem;
+	font-weight:500;
+	padding:10px 24px;
+}
+%button--submit{
+	@extend %button;
+	font-size:1.3rem;
+	font-weight:500;
+	padding:12px 40px;
+	letter-spacing:0.5px;
+}
+%button--round{
+	width:32px;
+	height:32px;
+	@extend %border-radius50;
+	background:none;
+	border:1px $color-gray200 solid;
+	margin-left:10px;
+	display:flex;
+	align-items:center;
+}
+%button--blue-border{
+	color:$color-blue !important;
+	border:1px $color-blue solid;
+}
+%button--blue-border--hover{
+	color:$color-white !important;
+	background-color:$color-blue;
+}
+%button--blue-border--selected{
+	color:$color-white !important;
+	background-color:$color-blue;
+}
+%button--blue-bg{
+	color:$color-white !important;
+	background-color:$color-blue;
+	border:1px $color-blue solid;
+}
+%button--blue-bg--hover{
+	color:$color-blue !important;
+	background-color:$color-white;
+}
+%button--lightblue-bg{
+	color:$color-blue !important;
+	background-color:$color-lightblue;
+	border:1px $color-lightblue solid;
+}
+%button--lightblue-bg--hover{
+	background-color:$color-white;
+}
+%button--lightblue-border{
+	color:$color-blue !important;
+	border:1px $color-lightblue solid;
+}
+%button--lightblue-border--hover{
+	background-color:$color-lightblue;
+}
+%button--red-border{
+	color:$color-red !important;
+	border:1px $color-red solid;
+}
+%button--red-border--hover{
+	color:$color-white !important;
+	background-color:$color-red;
+}
+%button--red-bg{
+	color:$color-white !important;
+	border:1px $color-red solid;
+	background-color:$color-red;
+}
+%button--red-bg--hover{
+	color:$color-red !important;
+	background-color:$color-white;
+}
+
+%button--green-border{
+	color:$color-green !important;
+	border:1px $color-green solid;
+}
+%button--green-border--hover{
+	color:$color-white !important;
+	background-color:$color-green;
+}
+%button--green-bg{
+	color:$color-white !important;
+	border:1px $color-green solid;
+	background-color:$color-green;
+}
+%button--green-bg--hover{
+	color:$color-green !important;
+	background-color:$color-white;
+}
+
+
+// Transitions 
+
+@mixin transition-all($td) {
+  -webkit-transition: all $td;
+  -ms-transition: all $td;
+  transition: all $td;
+}
+%transition-all--05{
+	@include transition-all(0.5s);
+}
+%transition-all--03{
+	@include transition-all(0.3s);
+}
+%transition-none{
+	 -webkit-transition: none;
+     -ms-transition: none;
+     transition: none;
+}
+
+
+
+// Font size and line height 
+
+
+@mixin fonts-lheight($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+
+// 10. Layout Breakpoints 
+
+@mixin breakpoint($point) {
+  @if $point == desktop-sm {
+     @media screen and (max-width: 1680px) { @content ; }
+  }
+  @else if $point == laptop {
+     @media screen and (max-width: 1440px) { @content ; }
+  }
+  @else if $point == laptop-sm {
+     @media screen and (max-width: 1280px) { @content ; }
+  }
+  @else if $point == tablet {
+     @media screen and (max-width: 1024px) { @content ; }
+  }
+  @else if $point == tablet--landscape {
+     @media screen and (max-width: 1024px) and (orientation: landscape) { @content ; }
+  }
+  @else if $point == mobile {
+     @media screen and (max-width: 800px)  { @content ; }
+  }
+  @else if $point == mobile--landscape {
+     @media screen and (max-width: 800px)  and (orientation: landscape)  { @content ; }
+  }
+  @else if $point == mobile-sm {
+     @media screen and (max-width: 400px)  { @content ; }
+  }
+  @else if $point == mobile-sm--landscape {
+     @media screen and (max-width: 400px)  and (orientation: landscape)  { @content ; }
+  }
+}

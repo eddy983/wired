@@ -1,0 +1,287 @@
+// GRID SCSS FILE
+
+// Author:	        SmartTemplates
+// Version:	        1.0
+// Created:	        February 2019
+// Last updated:	February 2019
+
+/*===============================================*/
+/* GRID		 					           	 */
+/*===============================================*/
+.grid{
+	width:100%;
+	&--margin{
+	width: calc(100% - #{$grid--margin} * 2);
+	margin:0 $grid--margin $grid--margin $grid--margin;
+	}
+	&--padding{
+	width: calc(100% - #{$grid--padding} * 2);
+	margin:$grid--padding;
+	}
+}
+
+.grid__row{
+	width:100%;
+	display:flex;
+	/* cancel display flex by display block */
+	&--d-block{
+	display:block;
+	}
+	&--margin{
+	width: calc(100% - #{$grid__row--margin} * 2);
+	margin:0 $grid__row--margin;
+	}
+	&--padding{
+	width: calc(100% - #{$grid__row--padding} * 2);
+	margin:$grid__row--padding;
+	}
+}
+.grid__col{
+    flex-grow: 1;
+	position:relative;
+	&--padding{
+		padding:$grid__col--padding;
+	}
+	&--margin{
+		margin-right:$grid__col--margin;
+		margin-bottom:$grid__col--margin;
+	}
+}
+
+@for $i from 1 through 7{
+	.grid__col--1#{$i}{
+		width: calc((100% - #{$grid__col--margin} * (#{$i} - 1)) / #{$i});
+		&.grid__col--padding{
+			width: calc((100% - #{$grid__col--margin} * (#{$i} - 1) - #{$grid__col--padding} * (#{$i} * 2)) / #{$i});
+		}
+	}
+}
+@for $i from 3 through 7{
+	.grid__col--2#{$i}{
+		width: calc((((100% - #{$grid__col--margin} * (#{$i} - 1)) / #{$i}) * 2) + #{$grid__col--margin});
+		&.grid__col--padding{
+			width: calc((((100% - #{$grid__col--margin} * (#{$i} - 1) - #{$grid__col--padding} * (#{$i} * 2)) / #{$i}) * 2) + #{$grid__col--margin} + #{$grid__col--padding} * 2);
+		}
+	}
+}
+@for $i from 4 through 7{
+	.grid__col--3#{$i}{
+		width: calc((((100% - #{$grid__col--margin} * (#{$i} - 1)) / #{$i}) * 3) + #{$grid__col--margin} * 2);
+		&.grid__col--padding{
+			width: calc((((100% - #{$grid__col--margin} * (#{$i} - 1) - #{$grid__col--padding} * (#{$i} * 2)) / #{$i}) * 3) + #{$grid__col--margin} * 2 + #{$grid__col--padding} * 4);
+		}
+	}
+}
+@for $i from 5 through 7{
+	.grid__col--4#{$i}{
+		width: calc((((100% - #{$grid__col--margin} * (#{$i} - 1)) / #{$i}) * 4) + #{$grid__col--margin} * 3);
+		&.grid__col--padding{
+			width: calc((((100% - #{$grid__col--margin} * (#{$i} - 1) - #{$grid__col--padding} * (#{$i} * 2)) / #{$i}) * 4) + #{$grid__col--margin} * 3 + #{$grid__col--padding} * 6);
+
+		}
+	}
+}
+@for $i from 6 through 7{
+	.grid__col--5#{$i}{
+		width: calc((((100% - #{$grid__col--margin} * (#{$i} - 1)) / #{$i}) * 5) + #{$grid__col--margin} * 4);
+		&.grid__col--padding{
+			width: calc((((100% - #{$grid__col--margin} * (#{$i} - 1) - #{$grid__col--padding} * (#{$i} * 2)) / #{$i}) * 5) + #{$grid__col--margin} * 4 + #{$grid__col--padding} * 8);
+
+		}
+	}
+}
+@for $i from 7 through 7{
+	.grid__col--6#{$i}{
+		width: calc((((100% - #{$grid__col--margin} * (#{$i} - 1)) / #{$i}) * 6) + #{$grid__col--margin} * 5);
+		&.grid__col--padding{
+			width: calc((((100% - #{$grid__col--margin} * (#{$i} - 1) - #{$grid__col--padding} * (#{$i} * 2)) / #{$i}) * 6) + #{$grid__col--margin} * 5 + #{$grid__col--padding} * 10);
+
+		}
+	}
+}
+
+.grid .grid__col--margin:last-child{
+	margin-right:0px;
+}
+.grid__col--floated-right{
+	order: 2; 
+	margin-right:0px !important;
+}
+.grid__col--centering{
+	text-align:center;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+// 5.1 GRID ELEMENTS   */
+ 
+.grid__title{
+	font-size:24px;
+	font-weight:400;
+	padding:0 0 20px 0;
+	margin:0px;
+}
+.grid__title span{
+	font-weight:700;
+}
+.grid__text {
+	padding-bottom:20px;
+	line-height:26px;
+}
+.grid__text span{
+	font-weight:700;
+}
+.grid__more{
+	font-weight:400;
+	font-size:14px;
+	padding:0 0 0 0;
+	display:inline-block;
+}
+.grid__list{
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+.grid__list li{
+	list-style:none;
+	padding:5px 0;
+	margin:0px;
+	line-height:22px;
+}
+.grid__image{
+	width:100%;
+}
+.grid__image img{
+	display:block;
+	max-width:100%;
+}
+.grid__image--right img{
+	float:right;
+}
+.grid__image--center img{
+	margin:auto;
+}
+.grid__image--left img{
+	float:left;
+}
+
+/*===============================================*/
+/* MEDIA QUERIES	 	     					 */
+/*===============================================*/
+
+@include breakpoint(laptop-sm) {
+
+	.grid__row{
+		flex-wrap:wrap;
+	}
+
+}
+/*=============*/
+@include breakpoint(tablet) {
+
+	.grid .grid__col--margin{
+		margin-right:0px;
+	}	
+
+	.grid__col{
+		width: 100%;
+		&.grid__col--padding{
+			width: calc((100% - #{$grid__col--padding} * 2));
+		}
+	}
+
+	@for $i from 1 through 7{
+		.grid__col--1#{$i}{
+			width: 100%;
+			&.grid__col--padding{
+				width: calc((100% - #{$grid__col--padding} * 2));
+			}
+		}
+	}
+	@for $i from 3 through 7{
+		.grid__col--2#{$i}{
+			width: 100%;
+			&.grid__col--padding{
+				width: calc((100% - #{$grid__col--padding} * 2));
+			}
+		}
+	}
+	@for $i from 4 through 7{
+		.grid__col--3#{$i}{
+			width: 100%;
+			&.grid__col--padding{
+				width: calc((100% - #{$grid__col--padding} * 2));
+			}
+		}
+	}
+	@for $i from 5 through 7{
+		.grid__col--4#{$i}{
+			width: 100%;
+			&.grid__col--padding{
+				width: calc((100% - #{$grid__col--padding} * 2));
+			}
+		}
+	}
+	@for $i from 6 through 7{
+		.grid__col--5#{$i}{
+			width: 100%;
+			&.grid__col--padding{
+				width: calc((100% - #{$grid__col--padding} * 2));
+			}
+		}
+	}
+	@for $i from 7 through 7{
+		.grid__col--6#{$i}{
+			width: 100%;
+			&.grid__col--padding{
+				width: calc((100% - #{$grid__col--padding} * 2));
+			}
+		}
+	}
+
+	.grid__col--mb-12{
+			width: calc((100% - #{$grid__col--margin}) / 2);
+			&.grid__col--padding{
+				width: calc((100% - #{$grid__col--margin} - #{$grid__col--padding} * 4) / 2);
+			}
+			&.grid__col--margin{
+			margin-right:$grid__col--margin;
+			}
+			&.grid__col--margin:nth-child(2n+2){
+			margin-right:0px;
+			}
+	}
+	.grid__col--mb-13{
+			width: calc((100% - #{$grid__col--margin} * 2) / 3);
+			&.grid__col--padding{
+				width: calc((100% - #{$grid__col--margin} * 2 - #{$grid__col--padding} * 6) / 3);
+			}
+			&.grid__col--margin{
+			margin-right:$grid__col--margin;
+			}
+			&.grid__col--margin:nth-child(3n+3){
+			margin-right:0px;
+			}
+	}
+	.grid__col--mb-14{
+			width: calc((100% - #{$grid__col--margin} * 3) / 4);
+			&.grid__col--padding{
+				width: calc((100% - #{$grid__col--margin} * 3 - #{$grid__col--padding} * 8) / 4);
+			}
+			&.grid__col--margin{
+			margin-right:$grid__col--margin;
+			}
+			&.grid__col--margin:nth-child(4n+4){
+			margin-right:0px;
+			}
+	}
+
+
+}
