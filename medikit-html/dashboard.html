@@ -12,7 +12,7 @@
 				content="medikit admin dashboard" />
 	<meta name="keywords"
 				content="medical dashboard, HTML UI KIT, medikit" />
-	<title>Medikit</title>
+	<title>Wired</title>
 	<link rel="stylesheet"
 				href="css/daterangepicker.css" />
 	<link rel="stylesheet"
@@ -29,7 +29,7 @@
 	<div class="dashboard-wrap">
 		<header class="sidebar-header">
 			<h1 class="sidebar-header__logo">
-				m<span>edi<strong>kit</strong></span>
+				W<span>ir<strong>ed</strong></span>
 			</h1>
 		</header>
 
@@ -41,43 +41,20 @@
 					<li class="dashboard">
 						<a href="dashboard.html"><b>Dashboard</b></a>
 					</li>
-					<li class="components has-submenu open">
-						<a href="#"><b>Components<span class="submenu-arrow"></span></b></a>
-						<ul class="sidebar-menu__submenu active"
-								style="display:block;">
-							<li><a href="dashboard__grid.html">Grid</a></li>
-							<li class="selected">
-								<a href="dashboard__charts.html">Charts</a>
-							</li>
-							<li><a href="dashboard__forms.html">Forms</a></li>
-							<li><a href="dashboard__tabs.html">Tabs</a></li>
-							<li><a href="dashboard__toggles.html">Toggles</a></li>
-							<li><a href="dashboard__tables.html">Tables</a></li>
-							<li><a href="dashboard__typography.html">Typography</a></li>
-						</ul>
+					<li class="components">
+						<a href="energy.html"><b>Energy</b></a>
 					</li>
-					<li class="appointment">
-						<a href="dashboard__appointments.html"><b>Appointments</b></a>
-					</li>
-					<li class="doctors has-submenu">
-						<a href="#"><b>Doctors<span class="submenu-arrow"></span></b></a>
-						<ul class="sidebar-menu__submenu">
-							<li>
-								<a href="dashboard__doctors-add.html">Add new doctor</a>
-							</li>
-							<li><a href="dashboard__doctors.html">View all doctors</a></li>
-						</ul>
-					</li>
+		
 					<li class="patients has-submenu">
-						<a href="#"><b>Patients<span class="submenu-arrow"></span></b></a>
+						<a href="#"><b>Customers<span class="submenu-arrow"></span></b></a>
 						<ul class="sidebar-menu__submenu">
 							<li>
-								<a href="dashboard__patients-add.html">Add new patient</a>
+								<a href="dashboard__patients-add.html">Add new customers</a>
 							</li>
 							<li>
-								<a href="dashboard__patients.html">View all patients</a>
+								<a href="dashboard__patients.html">View all customers</a>
 							</li>
-							<li><a href="dashboard__patient.html">Patient profile</a></li>
+							<li><a href="dashboard__patient.html">Customers profile</a></li>
 						</ul>
 					</li>
 					<li class="inbox">
@@ -115,8 +92,8 @@
 							 id="userdropdown">
 						<h3 class="dropdown-menu__subtitle">User menu</h3>
 						<ul>
-							<li><a href="#">View profile</a></li>
-							<li><a href="#">Edit</a></li>
+							<li><a href="dashboard__patient.html">View profile</a></li>
+							<li><a href="dashboard__patients-add.html">Edit</a></li>
 							<li class="logout">
 								<a href="#"
 									 class="button button--general button--red-border">Logout</a>
@@ -149,7 +126,7 @@
 							</li>
 
 							<li class="d-flex justify-sb">
-								<span>Meeting with <strong>Dr. Joshua</strong> </span>
+								<span>Meeting with <strong>Dr. Joshua</strong></span>
 								<b class="task-time">tomorrow</b>
 							</li>
 							<li class="d-flex justify-sb">
@@ -260,11 +237,117 @@
 						<canvas id="DiseasesChart" width="100%" height="40"></canvas>
 					</div>
 				</div>
+				<div class="grid__col  grid__col--padding bg-white mt20">
+					<div class="table table--18">
+						<div class="table__header">
+							<div class="table__row">
+								<div class="table__cell"></div>
+								<div class="table__cell">NAME</div>
+								<div class="table__cell">GENDER</div>
+								<div class="table__cell">DATE OF BIRTH</div>
+								<div class="table__cell">EMAIL</div>
+								<div class="table__cell">PHONE</div>
+								<div class="table__cell">ADRESS</div>
+								<div class="table__cell"></div>
+							</div>
+						</div>
+						<div class="table__body">
+							<div class="table__row">
+								<div class="table__cell"><div class="avatar-thumb"><img src="images/avatar-3.jpg" alt="" title=""/></div></div>
+								<div class="table__cell">Olivia Wilson</div>
+								<div class="table__cell"><img src="images/icons/icons-20-gray/female.png" alt="" title=""/></div>
+								<div class="table__cell">13/05/1980</div>
+								<div class="table__cell">olivia@wilson.com</div>
+								<div class="table__cell">+47 789 526 2222</div>
+								<div class="table__cell">Toronto, Canada</div>
+								
+								<div class="table__cell">
+									<span class="show-more show-more--ellipsis has-dropdown" data-dropdown="dropd1"></span>
+									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd1"> 			
+										<ul>
+											<li><a href="dashboard__patient-profile.html">View Profile</a></li>
+											<li><a href="#">Contact</a></li>
+											<li><a href="#">Delete</a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+							<div class="table__row">
+								<div class="table__cell"><div class="avatar-thumb"><img src="images/avatar-1.jpg" alt="" title=""/></div></div>
+								<div class="table__cell">Oliver Barnes</div>
+								<div class="table__cell"><img src="images/icons/icons-20-gray/male.png" alt="" title=""/></div>
+								<div class="table__cell">21/12/1975</div>
+								<div class="table__cell">oliver@barnes.com</div>
+								<div class="table__cell">+33 555 526 1111</div>
+								<div class="table__cell">Barcelona, Spain</div>
+								
+								<div class="table__cell">
+									<span class="show-more show-more--ellipsis has-dropdown" data-dropdown="dropd2"></span>
+									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd2"> 			
+										<ul>
+											<li><a href="dashboard__patient-profile.html">View Profile</a></li>
+											<li><a href="#">Contact</a></li>
+											<li><a href="#">Delete</a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+							
+							<div class="table__row">
+								<div class="table__cell"><div class="avatar-thumb"><img src="images/avatar-2.jpg" alt="" title=""/></div></div>
+								<div class="table__cell">Maya Cooper</div>
+								<div class="table__cell"><img src="images/icons/icons-20-gray/female.png" alt="" title=""/></div>
+								<div class="table__cell">07/06/1985</div>
+								<div class="table__cell">maya@cooper.com</div>
+								<div class="table__cell">+47 789 526 2222</div>
+								<div class="table__cell">Berlin, Germany</div>
+								
+								<div class="table__cell">
+									<span class="show-more show-more--ellipsis has-dropdown" data-dropdown="dropd3"></span>
+									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd3"> 			
+										<ul>
+											<li><a href="dashboard__patient-profile.html">View Profile</a></li>
+											<li><a href="#">Contact</a></li>
+											<li><a href="#">Delete</a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+							<div class="table__row">
+								<div class="table__cell"><div class="avatar-thumb"><img src="images/avatar-4.jpg" alt="" title=""/></div></div>
+								<div class="table__cell">Adam King</div>
+								<div class="table__cell"><img src="images/icons/icons-20-gray/male.png" alt="" title=""/></div>
+								<div class="table__cell">23/02/1975</div>
+								<div class="table__cell">adam@king.com</div>
+								<div class="table__cell">+45 111 526 6789</div>
+								<div class="table__cell">Paris, France</div>
+								
+								<div class="table__cell">
+									<span class="show-more show-more--ellipsis has-dropdown" data-dropdown="dropd4"></span>
+									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd4"> 			
+										<ul>
+											<li><a href="dashboard__patient-profile.html">View Profile</a></li>
+											<li><a href="#">Contact</a></li>
+											<li><a href="#">Delete</a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+
+						</div>
+						
+					</div>
+					<!-- TABLE end -->
+				</div>
 			</div>
 			<!-- End of Grid -->
 		</div>
+
+		
 	</div>
 	<!-- Wrap end -->
+
+	
 
 	<div class="section section-panel"
 			 id="panel">
@@ -350,88 +433,6 @@
 										<span class="switch__handle"></span>
 									</label>
 								</div>
-							</div>
-						</div>
-						<div class="grid__row">
-							<div class="grid__col grid__col--margin">
-								<h3 class="grid__col-title">Custom radios</h3>
-							</div>
-						</div>
-						<div class="grid__row">
-							<div class="grid__col grid__col--margin">
-								<label class="form__label">CUSTOM RADIO SETTINGS</label>
-								<div class="form__radio">
-									<input type="radio"
-												 name="cr"
-												 id="cr1"
-												 value="1"
-												 checked /><label for="cr1">Radio option</label>
-								</div>
-								<div class="form__radio">
-									<input type="radio"
-												 name="cr"
-												 id="cr2"
-												 value="2" /><label for="cr2">Radio option</label>
-								</div>
-								<div class="form__radio">
-									<input type="radio"
-												 name="cr"
-												 id="cr3"
-												 value="3" /><label for="cr3">Radio option</label>
-								</div>
-							</div>
-						</div>
-						<div class="grid__row">
-							<div class="grid__col grid__col--margin">
-								<h3 class="grid__col-title">Custom checkboxes</h3>
-							</div>
-						</div>
-						<div class="grid__row">
-							<div class="grid__col grid__col--margin">
-								<label class="form__label">CUSTOM CHECKBOX SETTINGS</label>
-								<div class="form__checkbox">
-									<input type="checkbox"
-												 name="cc1"
-												 id="cc1"
-												 value="1"
-												 checked /><label for="cc1">Checkbox option</label>
-								</div>
-								<div class="form__checkbox">
-									<input type="checkbox"
-												 name="cc2"
-												 id="cc2"
-												 value="2" /><label for="cc2">Checkbox option</label>
-								</div>
-								<div class="form__checkbox">
-									<input type="checkbox"
-												 name="cc3"
-												 id="cc3"
-												 value="3" /><label for="cc3">Checkbox option</label>
-								</div>
-							</div>
-						</div>
-
-						<div class="grid__row">
-							<div class="grid__col grid__col--margin">
-								<h3 class="grid__col-title">Custom Slider</h3>
-							</div>
-						</div>
-						<div class="grid__row">
-							<div class="grid__col grid__col--margin">
-								<label class="form__label">CUSTOM SINGLE SLIDER</label>
-								<input type="text"
-											 class="js-slider"
-											 name="my_range"
-											 value="" />
-							</div>
-						</div>
-						<div class="grid__row">
-							<div class="grid__col grid__col--margin mb0">
-								<label class="form__label">CUSTOM RANGE SLIDER</label>
-								<input type="text"
-											 class="js-range-slider"
-											 name="my_range"
-											 value="" />
 							</div>
 						</div>
 					</div>

@@ -9,7 +9,7 @@
     <meta name="author" content="SmartTemplates" />
     <meta name="description" content="medikit admin dashboard" />
     <meta name="keywords" content="medical dashboard, HTML UI KIT, medikit" />
-    <title>Medikit</title>
+    <title>Wired</title>
     <link rel="stylesheet" href="css/swiper.css" />
     <link rel="stylesheet" href="css/jquery.scrollbar.css" />
     <link rel="stylesheet" href="css/daterangepicker.css" />
@@ -23,75 +23,43 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/>
   </head>
   <body>
-    <div class="dashboard-wrap">
-      <header class="sidebar-header">
-        <h1 class="sidebar-header__logo">
-          m<span>edi<strong>kit</strong></span>
-        </h1>
-      </header>
+    <header class="sidebar-header">
+			<h1 class="sidebar-header__logo">
+				W<span>ir<strong>ed</strong></span>
+			</h1>
+		</header>
 
       <!-- Left Sidebar -->
       <div class="section section--sidebar" id="sidebar">
         <nav class="sidebar-menu">
-          <ul>
-            <li class="dashboard">
-              <a href="dashboard.html"><b>Dashboard</b></a>
-            </li>
-            <li class="components">
-              <a href="reading.html"><b>Reading</b></a>
-            </li>
-            <li class="components has-submenu">
-              <a href="#"
-                ><b>Components<span class="submenu-arrow"></span></b
-              ></a>
-              <ul class="sidebar-menu__submenu">
-                <li><a href="dashboard__grid.html">Grid</a></li>
-                <li><a href="dashboard__charts.html">Charts</a></li>
-                <li><a href="dashboard__forms.html">Forms</a></li>
-                <li><a href="dashboard__tabs.html">Tabs</a></li>
-                <li><a href="dashboard__toggles.html">Toggles</a></li>
-                <li><a href="dashboard__tables.html">Tables</a></li>
-                <li><a href="dashboard__typography.html">Typography</a></li>
-              </ul>
-            </li>
-            <li class="appointment">
-              <a href="dashboard__appointments.html"><b>Appointments</b></a>
-            </li>
-            <li class="doctors has-submenu">
-              <a href="#"
-                ><b>Doctors<span class="submenu-arrow"></span></b
-              ></a>
-              <ul class="sidebar-menu__submenu">
-                <li>
-                  <a href="dashboard__doctors-add.html">Add new doctor</a>
-                </li>
-                <li><a href="dashboard__doctors.html">View all doctors</a></li>
-              </ul>
-            </li>
-            <li class="patients has-submenu">
-              <a href="#"
-                ><b>Patients<span class="submenu-arrow"></span></b
-              ></a>
-              <ul class="sidebar-menu__submenu">
-                <li>
-                  <a href="dashboard__patients-add.html">Add new patient</a>
-                </li>
-                <li>
-                  <a href="dashboard__patients.html">View all patients</a>
-                </li>
-                <li><a href="dashboard__patient.html">Patient profile</a></li>
-              </ul>
-            </li>
-            <li class="inbox">
-              <a href="dashboard__messages.html"
-                ><b>Messages<span class="submenu-bubble">3</span></b></a
-              >
-            </li>
-            <li class="settings">
-              <a href="#"><b>Access Control</b></a>
-            </li>
-          </ul>
-        </nav>
+				<ul>
+					<li class="dashboard">
+						<a href="dashboard.html"><b>Dashboard</b></a>
+					</li>
+					<li class="components">
+						<a href="energy.html"><b>Energy</b></a>
+					</li>
+		
+					<li class="patients has-submenu">
+						<a href="#"><b>Customers<span class="submenu-arrow"></span></b></a>
+						<ul class="sidebar-menu__submenu">
+							<li>
+								<a href="dashboard__patients-add.html">Add new customers</a>
+							</li>
+							<li>
+								<a href="dashboard__patients.html">View all customers</a>
+							</li>
+							<li><a href="dashboard__patient.html">Customers profile</a></li>
+						</ul>
+					</li>
+					<li class="inbox">
+						<a href="dashboard__messages.html"><b>Messages<span class="submenu-bubble">3</span></b></a>
+					</li>
+					<li class="settings">
+						<a href="#"><b>Access Control</b></a>
+					</li>
+				</ul>
+			  </nav>
       </div>
 
       <!-- Content -->
@@ -120,8 +88,8 @@
             >
               <h3 class="dropdown-menu__subtitle">User menu</h3>
               <ul>
-                <li><a href="#">View profile</a></li>
-                <li><a href="#">Edit</a></li>
+                <li><a href="dashboard__patient.html">View profile</a></li>
+                <li><a href="dashboard__patients-add.html">Edit</a></li>
                 <li class="logout">
                   <a href="#" class="button button--general button--red-border"
                     >Logout</a
@@ -936,207 +904,98 @@
     </div>
     <!-- Wrap End -->
 
-    <div class="section section-panel" id="panel">
-      <div class="panel-resize"></div>
-      <div class="section-panel__content scrollbar-macosx">
-        <div class="grid">
-          <div class="grid__row">
-            <div class="grid__col grid__col--padding">
-              <div class="grid__row">
-                <div class="grid__col grid__col--margin">
-                  <h3 class="grid__col-title">Admin</h3>
-                </div>
-              </div>
-              <div class="grid__row align-c">
-                <div class="grid__col grid__col--mb-12 grid__col--margin">
-                  <label class="form__label pb0">Can create customers</label>
-                </div>
-                <div class="grid__col grid__col--mb-12 grid__col--margin">
-                  <div class="form__switcher">
-                    <label class="switch">
-                      <input
-                        class="switch__input"
-                        type="checkbox"
-                        data-role="none"
-                        checked
-                      />
-                      <span
-                        class="switch__label"
-                        data-on="On"
-                        data-off="Off"
-                      ></span>
-                      <span class="switch__handle"></span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div class="grid__row align-c">
-                <div class="grid__col grid__col--mb-12 grid__col--margin">
-                  <label class="form__label pb0">Can view customers</label>
-                </div>
-                <div class="grid__col grid__col--mb-12 grid__col--margin">
-                  <div class="form__switcher">
-                    <label class="switch">
-                      <input
-                        class="switch__input"
-                        type="checkbox"
-                        data-role="none"
-                      />
-                      <span
-                        class="switch__label"
-                        data-on="On"
-                        data-off="Off"
-                      ></span>
-                      <span class="switch__handle"></span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div class="grid__row align-c">
-                <div class="grid__col grid__col--mb-12 grid__col--margin">
-                  <label class="form__label pb0">ENABLED OPTION</label>
-                </div>
-                <div class="grid__col grid__col--mb-12 grid__col--margin">
-                  <div class="form__switcher">
-                    <label class="switch">
-                      <input
-                        class="switch__input"
-                        type="checkbox"
-                        data-role="none"
-                        checked
-                      />
-                      <span
-                        class="switch__label"
-                        data-on="On"
-                        data-off="Off"
-                      ></span>
-                      <span class="switch__handle"></span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div class="grid__row align-c">
-                <div class="grid__col grid__col--mb-12 grid__col--margin">
-                  <label class="form__label pb0">DISABLED OPTION</label>
-                </div>
-                <div class="grid__col grid__col--mb-12 grid__col--margin">
-                  <div class="form__switcher">
-                    <label class="switch">
-                      <input
-                        class="switch__input"
-                        type="checkbox"
-                        data-role="none"
-                      />
-                      <span
-                        class="switch__label"
-                        data-on="On"
-                        data-off="Off"
-                      ></span>
-                      <span class="switch__handle"></span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div class="grid__row">
-                <div class="grid__col grid__col--margin">
-                  <h3 class="grid__col-title">Custom radios</h3>
-                </div>
-              </div>
-              <div class="grid__row">
-                <div class="grid__col grid__col--margin">
-                  <label class="form__label">CUSTOM RADIO SETTINGS</label>
-                  <div class="form__radio">
-                    <input
-                      type="radio"
-                      name="cr"
-                      id="cr1"
-                      value="1"
-                      checked
-                    /><label for="cr1">Radio option</label>
-                  </div>
-                  <div class="form__radio">
-                    <input type="radio" name="cr" id="cr2" value="2" /><label
-                      for="cr2"
-                      >Radio option</label
-                    >
-                  </div>
-                  <div class="form__radio">
-                    <input type="radio" name="cr" id="cr3" value="3" /><label
-                      for="cr3"
-                      >Radio option</label
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="grid__row">
-                <div class="grid__col grid__col--margin">
-                  <h3 class="grid__col-title">Custom checkboxes</h3>
-                </div>
-              </div>
-              <div class="grid__row">
-                <div class="grid__col grid__col--margin">
-                  <label class="form__label">CUSTOM CHECKBOX SETTINGS</label>
-                  <div class="form__checkbox">
-                    <input
-                      type="checkbox"
-                      name="cc1"
-                      id="cc1"
-                      value="1"
-                      checked
-                    /><label for="cc1">Checkbox option</label>
-                  </div>
-                  <div class="form__checkbox">
-                    <input
-                      type="checkbox"
-                      name="cc2"
-                      id="cc2"
-                      value="2"
-                    /><label for="cc2">Checkbox option</label>
-                  </div>
-                  <div class="form__checkbox">
-                    <input
-                      type="checkbox"
-                      name="cc3"
-                      id="cc3"
-                      value="3"
-                    /><label for="cc3">Checkbox option</label>
-                  </div>
-                </div>
-              </div>
-
-              <div class="grid__row">
-                <div class="grid__col grid__col--margin">
-                  <h3 class="grid__col-title">Custom Slider</h3>
-                </div>
-              </div>
-              <div class="grid__row">
-                <div class="grid__col grid__col--margin">
-                  <label class="form__label">CUSTOM SINGLE SLIDER</label>
-                  <input
-                    type="text"
-                    class="js-slider"
-                    name="my_range"
-                    value=""
-                  />
-                </div>
-              </div>
-              <div class="grid__row">
-                <div class="grid__col grid__col--margin mb0">
-                  <label class="form__label">CUSTOM RANGE SLIDER</label>
-                  <input
-                    type="text"
-                    class="js-range-slider"
-                    name="my_range"
-                    value=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End of Grid -->
-      </div>
-    </div>
+    <div class="section section-panel"
+			 id="panel">
+		<div class="panel-resize"></div>
+		<div class="section-panel__content scrollbar-macosx">
+			<div class="grid">
+				<div class="grid__row">
+					<div class="grid__col grid__col--padding">
+						<div class="grid__row">
+							<div class="grid__col grid__col--margin">
+								<h3 class="grid__col-title">Admin</h3>
+							</div>
+						</div>
+						<div class="grid__row align-c">
+							<div class="grid__col grid__col--12 grid__col--margin">
+								<label class="form__label pb0">ENABLED OPTION</label>
+							</div>
+							<div class="grid__col grid__col--12 grid__col--margin">
+								<div class="form__switcher">
+									<label class="switch">
+										<input class="switch__input"
+													 type="checkbox"
+													 data-role="none"
+													 checked />
+										<span class="switch__label"
+													data-on="On"
+													data-off="Off"></span>
+										<span class="switch__handle"></span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="grid__row align-c">
+							<div class="grid__col grid__col--12 grid__col--margin">
+								<label class="form__label pb0">DISABLED OPTION</label>
+							</div>
+							<div class="grid__col grid__col--12 grid__col--margin">
+								<div class="form__switcher">
+									<label class="switch">
+										<input class="switch__input"
+													 type="checkbox"
+													 data-role="none" />
+										<span class="switch__label"
+													data-on="On"
+													data-off="Off"></span>
+										<span class="switch__handle"></span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="grid__row align-c">
+							<div class="grid__col grid__col--12 grid__col--margin">
+								<label class="form__label pb0">ENABLED OPTION</label>
+							</div>
+							<div class="grid__col grid__col--12 grid__col--margin">
+								<div class="form__switcher">
+									<label class="switch">
+										<input class="switch__input"
+													 type="checkbox"
+													 data-role="none"
+													 checked />
+										<span class="switch__label"
+													data-on="On"
+													data-off="Off"></span>
+										<span class="switch__handle"></span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="grid__row align-c">
+							<div class="grid__col grid__col--12 grid__col--margin">
+								<label class="form__label pb0">DISABLED OPTION</label>
+							</div>
+							<div class="grid__col grid__col--12 grid__col--margin">
+								<div class="form__switcher">
+									<label class="switch">
+										<input class="switch__input"
+													 type="checkbox"
+													 data-role="none" />
+										<span class="switch__label"
+													data-on="On"
+													data-off="Off"></span>
+										<span class="switch__handle"></span>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End of Grid -->
+		</div>
+	</div>
     <!-- End of right panel -->
 
     <!-- Modal - Appointment -->
