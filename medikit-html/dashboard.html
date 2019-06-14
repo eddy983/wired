@@ -34,15 +34,34 @@
 		</header>
 
 		<!-- Section sidebar -->
-		<div class="section section--sidebar"
-				 id="sidebar">
+		<div class="section section--sidebar" id="sidebar">
 			<nav class="sidebar-menu">
 				<ul>
 					<li class="dashboard">
 						<a href="dashboard.html"><b>Dashboard</b></a>
 					</li>
-					<li class="components">
-						<a href="energy.html"><b>Energy</b></a>
+					<li class="components has-submenu">
+						<a href="#"><b>Parameters<span class="submenu-arrow"></span></b></a>
+						<ul class="sidebar-menu__submenu">
+							<li>
+								<a href="energy.html">Power</a>
+							</li>
+							<li>
+								<a href="energy.html">Digital inputs</a>
+							</li>
+							<li><a href="energy.html">Energy</a></li>
+							<li><a href="energy.html">Date & Time stamps</a></li>
+							<li><a href="energy.html">Trigger</a></li>
+							<li><a href="energy.html">Voltage</a></li>
+							<li><a href="energy.html">Current</a></li>
+							<li><a href="energy.html">Active power</a></li>
+							<li><a href="energy.html">Reactive power</a></li>
+							<li><a href="energy.html">Apparent power</a></li>
+							<li><a href="energy.html">Power factor</a></li>
+							<li><a href="energy.html">Frequency</a></li>
+							<li><a href="energy.html">Neutral current</a></li>
+							<li><a href="energy.html">Max demands</a></li>
+						</ul>
 					</li>
 		
 					<li class="patients has-submenu">
@@ -218,12 +237,28 @@
 
 			<div class="grid grid--margin mb0">
 				<div class="grid__row">
-					<div class="grid__col grid__col--12 grid__col--margin grid__col--padding bg-white">
-						<canvas id="ReportsChart" width="100%" height="40"></canvas>
-					</div>
-					<div class="grid__col grid__col--12 grid__col--margin grid__col--padding bg-white">
-						<canvas id="CustomChart" width="100%" height="40"></canvas>
-					</div>
+					<div class="grid__col grid__col--12 grid__col--margin grid__col--padding bg-white gradient-blue">
+							<div class="d-flex align-c">
+								<div class="info-nr info-nr--strong color-white">Total Energy</div>
+								<div class="info-details color-white">
+									<p>(kwh)</p>
+								</div>
+							</div>
+						</div>
+						<div class="grid__col grid__col--12 grid__col--margin grid__col--padding bg-white">
+							<div class="grid__row justify-sb">
+								<div class="grid__col grid__col--mb-12">
+									<h3 class="grid__col-title">Peak Power</h3>
+									<span class="grid__col-subtitle">LAST MONTH</span>
+								</div>
+							</div>
+							<div class="d-flex align-c">
+								<div class="info-nr info-nr--strong gradient-pink gradient-text">48</div>
+								<div class="info-details">
+								<p>kwh</p>
+								</div>
+							</div>
+						</div>
 				</div>
 			</div>
 			<!-- End of Grid -->
@@ -342,7 +377,6 @@
 			</div>
 			<!-- End of Grid -->
 		</div>
-
 		
 	</div>
 	<!-- Wrap end -->

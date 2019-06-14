@@ -365,6 +365,11 @@ Template:	    MEDIKIT
   margin: 25px;
 }
 
+.grid--padding2 {
+  width: calc(100% - 25px * 4);
+  margin: 25px;
+}
+
 .grid__row {
   width: 100%;
   display: -webkit-box;
