@@ -18,6 +18,10 @@
 	width: calc(100% - #{$grid--padding} * 2);
 	margin:$grid--padding;
 	}
+	&--padding2{
+	width: calc(100% - #{$grid--padding} * 4); 
+	margin:$grid--padding;
+	}
 }
 
 .grid__row{

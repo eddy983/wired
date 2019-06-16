@@ -20,49 +20,60 @@
 <div class="dashboard-wrap">
 
 	<header class="sidebar-header">
-		<h1 class="sidebar-header__logo">
-			W<span>ir<strong>ed</strong></span>
-		</h1>
+		<img src="images/logo.svg" alt="logo" class="sidebar-header__logo">
 	</header>
 	
 	<!-- Left Sidebar -->
 	<div class="section section--sidebar" id="sidebar">
+		<nav class="sidebar-menu">
+			<ul>
+				<li class="dashboard">
+					<a href="dashboard.html"><b>Dashboard</b></a>
+				</li>
+				<li class="components has-submenu">
+					<a href="#"><b>Parameters<span class="submenu-arrow"></span></b></a>
+					<ul class="sidebar-menu__submenu">
+						<li>
+							<a href="energy.html">Power</a>
+						</li>
+						<li>
+							<a href="energy.html">Digital inputs</a>
+						</li>
+						<li><a href="energy.html">Energy</a></li>
+						<li><a href="energy.html">Date & Time stamps</a></li>
+						<li><a href="energy.html">Trigger</a></li>
+						<li><a href="energy.html">Voltage</a></li>
+						<li><a href="energy.html">Current</a></li>
+						<li><a href="energy.html">Active power</a></li>
+						<li><a href="energy.html">Reactive power</a></li>
+						<li><a href="energy.html">Apparent power</a></li>
+						<li><a href="energy.html">Power factor</a></li>
+						<li><a href="energy.html">Frequency</a></li>
+						<li><a href="energy.html">Neutral current</a></li>
+						<li><a href="energy.html">Max demands</a></li>
+					</ul>
+				</li>
 	
-			<nav class="sidebar-menu"> 
-				<ul>
-					<li class="dashboard"><a href="dashboard.html"><b>Dashboard</b></a></li>
-					<li class="components"><a href="reading.html"><b>Reading</b></a>
-					</li>
-					<li class="components has-submenu"><a href="#"><b>Components<span class="submenu-arrow"></span></b></a>
-						<ul class="sidebar-menu__submenu">
-							<li><a href="dashboard__grid.html">Grid</a></li>
-							<li><a href="dashboard__charts.html">Charts</a></li>
-							<li><a href="dashboard__forms.html">Forms</a></li>
-							<li><a href="dashboard__tabs.html">Tabs</a></li>
-							<li><a href="dashboard__toggles.html">Toggles</a></li>
-							<li><a href="dashboard__tables.html">Tables</a></li>
-							<li><a href="dashboard__typography.html">Typography</a></li>
-						</ul>
-					</li>
-					<li class="appointment"><a href="dashboard__appointments.html"><b>Appointments</b></a></li>
-					<li class="doctors has-submenu"><a href="#"><b>Doctors<span class="submenu-arrow"></span></b></a>
-						<ul class="sidebar-menu__submenu">
-							<li><a href="dashboard__doctors-add.html">Add new doctor</a></li>
-							<li><a href="dashboard__doctors.html">View all doctors</a></li>
-						</ul>
-					</li>
-					<li class="patients has-submenu"><a href="#"><b>Patients<span class="submenu-arrow"></span></b></a>
-						<ul class="sidebar-menu__submenu">
-							<li><a href="dashboard__patients-add.html">Add new patient</a></li>
-							<li><a href="dashboard__patients.html">View all patients</a></li>
-							<li><a href="dashboard__patient.html">Patient profile</a></li>
-						</ul>
-					</li>		
-					<li class="inbox"><a href="dashboard__messages.html"><b>Messages<span class="submenu-bubble">3</span></b></a></li>
-					<li class="settings"><a href="#"><b>Access Control</b></a></li>
-				</ul>
-			</nav>
-	
+				<li class="patients has-submenu">
+					<a href="#"><b>Customers<span class="submenu-arrow"></span></b></a>
+					<ul class="sidebar-menu__submenu">
+						<li>
+							<a href="dashboard__patients-add.html">Add new customers</a>
+						</li>
+						<li>
+							<a href="dashboard__patients.html">View all customers</a>
+						</li>
+						<li><a href="dashboard__patient.html">Customers profile</a></li>
+					</ul>
+				</li>
+				<li class="inbox">
+					<a href="dashboard__messages.html"><b>Messages<span class="submenu-bubble">3</span></b></a>
+				</li>
+				<li class="settings">
+					<a href="#"><b>Access Control</b></a>
+				</li>
+			</ul>
+		</nav>
 	</div>
 	
 	<!-- Content -->

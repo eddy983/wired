@@ -365,6 +365,11 @@ Template:	    MEDIKIT
   margin: 25px;
 }
 
+.grid--padding2 {
+  width: calc(100% - 25px * 4);
+  margin: 25px;
+}
+
 .grid__row {
   width: 100%;
   display: -webkit-box;
@@ -1358,12 +1363,9 @@ h6 {
 }
 
 .sidebar-header__logo {
-  color: #fff;
-  font-size: 2.8rem;
-  font-weight: 700;
-  letter-spacing: -0.5px;
+  height: 56px;
   padding: 0 0 0 15px;
-  margin: 0 0 0 40px;
+  margin: 20px 0 0 40px;
   display: block;
   position: relative;
   top: 50%;
