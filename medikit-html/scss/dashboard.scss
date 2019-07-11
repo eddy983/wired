@@ -3511,6 +3511,8 @@ select.custom-select-rendered {
     &:focus {
       width: 90%;
     }
+
+    
   }
   .content-subheader__dropdown {
     width: 100%;
@@ -3625,4 +3627,11 @@ select::-ms-expand {
 {
   background-color: darkblue;	  
   border-radius: 10px;     
-}          
+}     
+
+@media screen and (max-width: 400px) {
+  .sidebar-header__logo {
+    height: 28px;
+  }
+}
+
